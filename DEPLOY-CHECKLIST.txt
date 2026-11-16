@@ -1,0 +1,13 @@
+KOSATKA FINANCE 2.0 DEPLOY CHECKLIST
+
+[ ] Create Supabase project
+[ ] Run supabase-schema.sql in SQL Editor
+[ ] Add Project URL and publishable key to supabase-config.js
+[ ] Enable user_data in the supabase_realtime publication
+[ ] Add https://baufunt.github.io/kosatka-dashboard/ to Auth redirect URLs
+[ ] Keep existing assets/ folder
+[ ] Replace index.html and add supabase-config.js + supabase-schema.sql
+[ ] Push to main and wait for GitHub Pages deployment
+[ ] Create an account, confirm email, and sign in
+[ ] Record a test transaction
+[ ] Sign in on another browser/device and verify the transaction appears

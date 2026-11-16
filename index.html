@@ -64,12 +64,12 @@ table{width:100%;border-collapse:collapse;min-width:560px}th{text-align:left;pad
 @media(max-width:860px){.dealers{grid-template-columns:1fr}}
 </style></head><body class="locked"><div class="bg"><svg class="city" viewBox="0 0 1600 300" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><path class="b1" d="M-10 97h58V300H-10ZM54 125h59V300H54ZM117 193h42V300H117ZM162 193h70V300H162ZM197 193v-23h2v18ZM232 230h64V300H232ZM299 200h58V300H299ZM363 224h63V300H363ZM394 224v-20h2v21ZM430 122h31V300H430ZM465 108h42V300H465ZM486 108v-23h2v29ZM507 219h72V300H507ZM581 99h56V300H581ZM643 175h35V300H643ZM679 167h62V300H679ZM710 167v-32h2v38ZM741 213h55V300H741ZM799 236h34V300H799ZM833 187h43V300H833ZM876 144h60V300H876ZM939 222h56V300H939ZM996 171h79V300H996ZM1077 237h51V300H1077ZM1134 206h37V300H1134ZM1152 206v-17h2v14ZM1171 116h59V300H1171ZM1200 116v-31h2v20ZM1233 192h62V300H1233ZM1301 133h38V300H1301ZM1339 133h55V300H1339ZM1394 163h47V300H1394ZM1441 193h43V300H1441ZM1490 93h68V300H1490ZM1524 93v-18h2v20ZM1561 238h46V300H1561ZM1609 142h48V300H1609ZM1633 142v-16h2v20Z"/><path class="b2" d="M-10 239h64V300H-10ZM22 239v-25h2v25ZM58 254h53V300H58ZM114 253h60V300H114ZM175 251h64V300H175ZM240 239h63V300H240ZM304 200h64V300H304ZM336 200v-26h2v29ZM372 217h29V300H372ZM386 217v-17h2v15ZM405 240h40V300H405ZM448 217h40V300H448ZM492 233h55V300H492ZM552 254h28V300H552ZM566 254v-31h2v34ZM586 192h63V300H586ZM617 192v-20h2v20ZM654 262h25V300H654ZM666 262v-28h2v21ZM679 248h26V300H679ZM692 248v-30h2v32ZM706 224h29V300H706ZM720 224v-28h2v24ZM740 196h57V300H740ZM801 268h26V300H801ZM829 266h43V300H829ZM850 266v-34h2v16ZM875 177h28V300H875ZM904 261h28V300H904ZM934 176h26V300H934ZM961 225h45V300H961ZM983 225v-29h2v16ZM1012 169h50V300H1012ZM1037 169v-29h2v32ZM1062 186h63V300H1062ZM1129 193h24V300H1129ZM1141 193v-16h2v34ZM1153 217h40V300H1153ZM1196 212h61V300H1196ZM1263 260h58V300H1263ZM1325 231h25V300H1325ZM1353 241h25V300H1353ZM1378 171h55V300H1378ZM1436 269h40V300H1436ZM1477 245h63V300H1477ZM1546 186h45V300H1546ZM1594 229h39V300H1594Z"/></svg></div><div class="grain"></div>
 <div class="auth" id="auth"><div class="au-l"><div class="brand"><i>K</i><div>KOSATKA<small>FINANCE</small></div></div><div class="au-copy"><div class="eyebrow">GTA Online</div><h1>Your GTA Online<br>money, tracked.</h1><p>Cash, bank, heists and finale payouts in one place. Sign in to pick up where you left off.</p></div><div class="muted">Your data stays on this device.</div></div>
-<form class="au-card" id="authForm"><div class="tabs"><button type="button" class="on" data-auth="in">Sign in</button><button type="button" data-auth="up">Create account</button></div><div class="field"><label>Username</label><input id="auUser" autocomplete="username" maxlength="20" required></div><div class="field"><label>Password</label><input id="auPass" type="password" autocomplete="current-password" required></div><div class="field" id="auConfWrap" style="display:none"><label>Confirm password</label><input id="auConf" type="password" autocomplete="new-password"></div><div class="err" id="auErr"></div><button class="btn pri" id="auGo" style="height:46px">Sign in</button><p class="fine">Accounts live in this browser only and don't sync between devices. Use Settings → Export backup to move your data.</p></form></div>
+<form class="au-card" id="authForm"><div class="tabs"><button type="button" class="on" data-auth="in">Sign in</button><button type="button" data-auth="up">Create account</button></div><div class="field"><label>Email address</label><input id="auUser" type="email" autocomplete="email" maxlength="254" required></div><div class="field"><label>Password</label><input id="auPass" type="password" autocomplete="current-password" required></div><div class="field" id="auConfWrap" style="display:none"><label>Confirm password</label><input id="auConf" type="password" autocomplete="new-password"></div><div class="err" id="auErr"></div><button class="btn pri" id="auGo" style="height:46px">Sign in</button><p class="fine">Secure email sign-in. Your finance and operation data syncs to your account across devices.</p></form></div>
 <input type="file" id="imgFile" accept="image/*" hidden>
 
 <header class="top"><div class="brand"><i>K</i><div>KOSATKA<small>FINANCE</small></div></div>
 <nav id="nav"><button data-page="overview" class="on">Overview</button><button data-page="ops">Operations</button><button data-page="cars">Cars</button><button data-page="ledger">Ledger</button><button data-page="banking">Banking</button><button data-page="missions">Missions</button><button data-page="insights">Insights</button><button data-page="settings">Settings</button></nav>
-<div class="top-r"><span class="uchip" id="uchip"></span><button class="btn gh" data-act="signOut">Sign out</button><span class="clock" id="clock"></span><button class="btn pri" data-act="tx"><span>Record</span></button></div></header>
+<div class="top-r"><span id="cloudStatus" class="clock">Cloud not configured</span><span class="uchip" id="uchip"></span><button class="btn gh" data-act="signOut">Sign out</button><span class="clock" id="clock"></span><button class="btn pri" data-act="tx"><span>Record</span></button></div></header>
 <main>
 <section class="page active" id="page-overview"><div class="ph"><div><div class="eyebrow">GTA Online</div><h1>Overview</h1></div><span class="muted" id="today"></span></div>
 <div class="bento">
@@ -114,12 +114,14 @@ table{width:100%;border-collapse:collapse;min-width:560px}th{text-align:left;pad
 <div class="sr"><div><strong>Export transactions CSV</strong><small>Open your ledger in a spreadsheet.</small></div><button class="btn" data-act="exportCsv">Export</button></div>
 <div class="sr"><div><strong>Clear history</strong><small>Remove transactions, keep balances.</small></div><button class="btn dng" data-act="clearHistory">Clear</button></div>
 <div class="sr"><div><strong>Reset tracker</strong><small>Set balances back to $0 and clear activity and operation progress.</small></div><button class="btn dng" data-act="resetAll">Reset</button></div></div>
-<div class="note" style="margin-top:16px">Kosatka Finance is a standalone browser tracker stored on this device. It is not affiliated with Rockstar Games.</div></section>
+<div class="note" style="margin-top:16px">Kosatka Finance syncs balances, transactions and operation progress through your private cloud account. Custom image overrides stay on the device where they were added. This is a fan-made tracker and is not affiliated with Rockstar Games.</div></section>
 </main>
 <div class="mb" id="moneyModal"><div class="modal"><h3 id="moneyTitle">Transfer</h3><p id="moneyDesc"></p><div class="field"><label>Amount</label><input id="moneyAmount" inputmode="decimal" autocomplete="off" placeholder="e.g. 250,000 or 1.5m"></div><div class="qk"><button data-quick="10000">$10K</button><button data-quick="50000">$50K</button><button data-quick="100000">$100K</button><button data-quick="max">MAX</button></div><div class="note" id="moneyNote" style="margin-top:14px"></div><div class="ma"><button class="btn" data-close>Cancel</button><button class="btn pri" id="confirmMoney">Confirm transfer</button></div></div></div>
 <div class="mb" id="txModal"><div class="modal"><h3>Record transaction</h3><p>Add an income or expense to your ledger.</p><form id="txForm"><div class="field"><label>Description</label><input id="txDesc" maxlength="70" required placeholder="e.g. Cluckin' Bell finale"></div><div class="fr"><div class="field"><label>Type</label><select id="txType"><option value="earn">Earned</option><option value="spend">Spent</option></select></div><div class="field"><label>Account</label><select id="txAccount"><option value="cash">Cash on hand</option><option value="bank">Maze Bank</option></select></div></div><div class="fr"><div class="field"><label>Amount</label><input id="txAmount" inputmode="decimal" autocomplete="off" required placeholder="e.g. 75,000"></div><div class="field"><label>Date</label><input id="txDate" type="date" required></div></div><div class="ma"><button class="btn" type="button" data-close>Cancel</button><button class="btn pri">Save entry</button></div></form></div></div>
 <div class="mb" id="balModal"><div class="modal"><h3 id="balTitle">Set real balances</h3><p>Enter your actual in-game amounts. Commas, $ and shorthand like 1.25m all work.</p><form id="balForm"><div class="field"><label>Cash on hand</label><input id="editCash" inputmode="decimal" autocomplete="off" required></div><div class="field"><label>Maze Bank</label><input id="editBank" inputmode="decimal" autocomplete="off" required></div><div class="ma"><button class="btn" type="button" data-close>Cancel</button><button class="btn pri">Save balances</button></div></form></div></div>
 <div class="toast" id="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
 <script>
 const $=id=>document.getElementById(id),$$=s=>[...document.querySelectorAll(s)];
 let KEY='kosatka.guest.fin',START={cash:0,bank:0};
@@ -132,7 +134,7 @@ const stamp=ts=>new Date(ts).toLocaleString('en-US',{month:'short',day:'numeric'
 function tm(t){return t.at?' · '+new Date(t.at).toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'}):''}
 function load(){try{const x=JSON.parse(localStorage.getItem(KEY));if(x&&Number.isFinite(x.cash)&&Number.isFinite(x.bank)&&Array.isArray(x.tx))return{cash:x.cash,bank:x.bank,tx:x.tx}}catch(e){}return{...START,tx:[]}}
 let state=load(),page='overview',filter='all',q='',jobKind='all',jq='',moneyMode='withdraw',shown=0,raf=0;
-function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){toast('Could not save in this browser.')}render()}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){toast('Could not save in this browser.')}queueCloudSave();render()}
 function addTx(t){state.tx.unshift({id:Date.now()+Math.random(),ts:Date.now(),...t})}
 function sums(){let earn=0,spend=0,moves=0;state.tx.forEach(t=>{if(t.type==='earn')earn+=t.amount;if(t.type==='spend')spend+=t.amount;if(t.type==='transfer')moves++});return{earn,spend,moves,net:earn-spend}}
 function toast(s){$('toast').textContent=s;$('toast').classList.add('show');clearTimeout(window.tt);window.tt=setTimeout(()=>$('toast').classList.remove('show'),2400)}
@@ -205,7 +207,7 @@ union:[['Planning board briefing|Review the Union Depository contract.','Scope a
 function defsFor(j){let d=SETUPS[j.id]||[j.setups.filter(s=>!/finale/i.test(s)),[]];const mk=(a,p)=>(a||[]).map((s,i)=>{let[n,ds]=s.split('|');return{id:p+i,name:n,desc:ds||'Complete this preparation step.'}});return{req:mk(d[0],'r'),opt:mk(d[1],'o')}}
 function loadOps(){try{const x=JSON.parse(localStorage.getItem(OPS_KEY));if(x&&typeof x==='object'&&!Array.isArray(x))return x}catch(e){}return{}}
 let ops=loadOps(),curOp=null,payBusy=false;
-function saveOps(){try{localStorage.setItem(OPS_KEY,JSON.stringify(ops))}catch(e){toast('Progress could not be saved in this browser.')}}
+function saveOps(){try{localStorage.setItem(OPS_KEY,JSON.stringify(ops))}catch(e){toast('Progress could not be saved in this browser.')}queueCloudSave()}
 function opOf(id){let o=ops[id];if(!o||typeof o!=='object')o=ops[id]={};if(!Number.isInteger(o.run))o.run=1;if(!o.done||typeof o.done!=='object')o.done={};if(!Array.isArray(o.history))o.history=[];if(!o.paid)o.paid=null;if(!o.started)o.started=Date.now();return o}
 function prog(j){let d=defsFor(j),o=ops[j.id]||{},dn=o.done||{};return{d,rd:d.req.filter(s=>dn[s.id]).length,rt:d.req.length,od:d.opt.filter(s=>dn[s.id]).length,ot:d.opt.length,paid:!!o.paid}}
 
@@ -313,21 +315,113 @@ function imgList(j,b){let m=HT[j.id],l=[];if(imgs[j.id])l.push(imgs[j.id]);l.pus
 const imgPos=(j,b)=>{let m=HT[j.id];return(m&&(b?m[3]:m[2]))||'50% 40%'};
 const imgTag=(j,b)=>{let l=imgList(j,b);return `<img src="${esc(l[0])}" data-alts="${esc(l.slice(1).join('|'))}" referrerpolicy="no-referrer" alt=""${b?'':' loading="lazy"'} style="object-position:${imgPos(j,b)}" onerror="imgFail(this)">`};
 function imgFail(el){let a=(el.dataset.alts||'').split('|').filter(Boolean);if(a.length){el.dataset.alts=a.slice(1).join('|');el.src=a[0]}else el.remove()}
-function startSession(u,disp){me=disp;KEY='kosatka.u.'+u+'.fin';OPS_KEY='kosatka.u.'+u+'.ops';IMG_KEY='kosatka.u.'+u+'.img';let fresh=localStorage.getItem(KEY)==null;state=load();ops=loadOps();imgs=loadImgs();shown=0;try{localStorage.setItem(SESS_KEY,u)}catch(e){}
- $('uchip').textContent=disp;$('acctName').textContent='Signed in as '+disp+' · data saved to this account';document.body.classList.remove('locked');$('auth').classList.add('hidden');go('overview');
- if(fresh){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}openBal();$('balTitle').textContent='Welcome — set your starting balances'}}
-$$('[data-auth]').forEach(b=>b.addEventListener('click',()=>{authMode=b.dataset.auth;$$('[data-auth]').forEach(x=>x.classList.toggle('on',x===b));$('auConfWrap').style.display=authMode==='up'?'':'none';$('auGo').textContent=authMode==='up'?'Create account':'Sign in';$('auPass').autocomplete=authMode==='up'?'new-password':'current-password';$('auErr').textContent=''}));
-$('authForm').addEventListener('submit',async e=>{e.preventDefault();let raw=$('auUser').value.trim(),u=raw.toLowerCase(),pw=$('auPass').value,err=m=>{$('auErr').textContent=m},users=getUsers();err('');
- if(!/^[a-z0-9_.-]{3,20}$/.test(u))return err('Username: 3–20 letters, numbers, . _ or -');
- if(authMode==='up'){if(users[u])return err('That username is already taken on this device.');if(pw.length<6)return err('Password must be at least 6 characters.');if(pw!==$('auConf').value)return err('Passwords do not match.');
-  let first=!Object.keys(users).length,salt=rnd();users[u]={name:raw,salt,hash:await hashPw(pw,salt),created:Date.now()};
-  try{localStorage.setItem(USERS_KEY,JSON.stringify(users));if(first){let lf=JSON.parse(localStorage.getItem('kosatka.finance.v1')||'null');if(lf&&Number.isFinite(lf.cash)&&Number.isFinite(lf.bank)&&Array.isArray(lf.tx)&&(lf.cash||lf.bank||lf.tx.length)){localStorage.setItem('kosatka.u.'+u+'.fin',JSON.stringify(lf));let lo=localStorage.getItem('kosatka.finance.ops.v1');if(lo)localStorage.setItem('kosatka.u.'+u+'.ops',lo);setTimeout(()=>toast('Your existing data was moved into this account.'),500)}}}catch(x){return err('Could not save the account in this browser.')}
-  startSession(u,raw)}
- else{let r=users[u];if(!r||(await hashPw(pw,r.salt))!==r.hash)return err('Incorrect username or password.');startSession(u,r.name)}
- $('authForm').reset()});
-Object.assign(ACT,{signOut:()=>{try{localStorage.removeItem(SESS_KEY)}catch(e){}me='';closeModals();document.body.classList.add('locked');$('auth').classList.remove('hidden');setTimeout(()=>$('auUser').focus(),50)},
- img:()=>$('imgFile').click(),imgReset:()=>{delete imgs[curOp];saveImgs();renderOp()},
- logGuide:()=>{openTx();$('txDesc').value=missionStrands[curGuide][0]+' — Finale Payout';$('txType').value='earn'}});
+
+function cloudConfigured(){
+ return !!(window.KOSATKA_SUPABASE_URL && window.KOSATKA_SUPABASE_PUBLISHABLE_KEY &&
+   !String(window.KOSATKA_SUPABASE_URL).includes('YOUR_PROJECT') &&
+   !String(window.KOSATKA_SUPABASE_PUBLISHABLE_KEY).includes('YOUR_PUBLISHABLE'));
+}
+let cloudUser=null,cloudChannel=null,cloudSyncTimer=null,cloudWriting=false;
+const cloudClient = cloudConfigured() && window.supabase
+ ? window.supabase.createClient(window.KOSATKA_SUPABASE_URL,window.KOSATKA_SUPABASE_PUBLISHABLE_KEY)
+ : null;
+function cloudStatus(s){const el=$('cloudStatus');if(el)el.textContent=s}
+function queueCloudSave(){
+ if(!cloudClient||!cloudUser)return;
+ clearTimeout(cloudSyncTimer);cloudStatus('Sync pending…');
+ cloudSyncTimer=setTimeout(pushCloudData,650);
+}
+async function pushCloudData(){
+ if(!cloudClient||!cloudUser)return;
+ cloudWriting=true;cloudStatus('Syncing…');
+ const payload={finance:state,operations:ops};
+ const {error}=await cloudClient.from('user_data').upsert({
+  user_id:cloudUser.id,payload,updated_at:new Date().toISOString()
+ },{onConflict:'user_id'});
+ cloudWriting=false;
+ if(error){cloudStatus('Sync error');console.error('Kosatka cloud sync:',error);toast('Cloud sync failed. Check your connection.');}
+ else cloudStatus('Cloud synced ✓');
+}
+function applyCloudPayload(payload){
+ if(!payload||typeof payload!=='object')return;
+ if(payload.finance&&Number.isFinite(payload.finance.cash)&&Number.isFinite(payload.finance.bank)&&Array.isArray(payload.finance.tx)){
+  state={cash:payload.finance.cash,bank:payload.finance.bank,tx:payload.finance.tx};
+  try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}
+ }
+ if(payload.operations&&typeof payload.operations==='object'){
+  ops=payload.operations;try{localStorage.setItem(OPS_KEY,JSON.stringify(ops))}catch(e){}
+ }
+ render();
+}
+async function connectRealtime(user){
+ if(cloudChannel){await cloudClient.removeChannel(cloudChannel);cloudChannel=null;}
+ cloudChannel=cloudClient.channel('kosatka-user-'+user.id)
+  .on('postgres_changes',{event:'UPDATE',schema:'public',table:'user_data',filter:'user_id=eq.'+user.id},evt=>{
+   if(cloudWriting)return;
+   applyCloudPayload(evt.new&&evt.new.payload);cloudStatus('Synced from another device ✓');
+  }).subscribe();
+}
+async function startCloudSession(user){
+ cloudUser=user;
+ const display=(user.user_metadata&&user.user_metadata.display_name)||(user.email?user.email.split('@')[0]:'Player');
+ KEY='kosatka.u.'+user.id+'.fin';OPS_KEY='kosatka.u.'+user.id+'.ops';IMG_KEY='kosatka.u.'+user.id+'.img';
+ cloudStatus('Loading cloud data…');
+ const {data,error}=await cloudClient.from('user_data').select('payload').eq('user_id',user.id).maybeSingle();
+ if(error){cloudStatus('Cloud error');$('auErr').textContent='Could not load cloud data: '+error.message;return;}
+ if(data&&data.payload)applyCloudPayload(data.payload);
+ else {state=load();ops=loadOps();}
+ imgs=loadImgs();startSession(user.id,display);await connectRealtime(user);
+ if(!data)await pushCloudData();
+ cloudStatus('Cloud synced ✓');
+}
+function startSession(u,disp){
+ me=disp;KEY='kosatka.u.'+u+'.fin';OPS_KEY='kosatka.u.'+u+'.ops';IMG_KEY='kosatka.u.'+u+'.img';
+ state=load();ops=loadOps();imgs=loadImgs();shown=0;
+ try{localStorage.setItem(SESS_KEY,u)}catch(e){}
+ $('uchip').textContent=disp;$('acctName').textContent='Signed in as '+disp+' · cloud sync enabled';
+ document.body.classList.remove('locked');$('auth').classList.add('hidden');go('overview');
+}
+$$('[data-auth]').forEach(b=>b.addEventListener('click',()=>{
+ authMode=b.dataset.auth;$$('[data-auth]').forEach(x=>x.classList.toggle('on',x===b));
+ $('auConfWrap').style.display=authMode==='up'?'':'none';$('auGo').textContent=authMode==='up'?'Create account':'Sign in';
+ $('auPass').autocomplete=authMode==='up'?'new-password':'current-password';$('auErr').textContent='';
+}));
+$('authForm').addEventListener('submit',async e=>{
+ e.preventDefault();const email=$('auUser').value.trim().toLowerCase(),password=$('auPass').value;
+ const err=m=>{$('auErr').textContent=m};err('');
+ if(!cloudClient)return err('Cloud accounts are not configured. Add your Supabase URL and publishable key to supabase-config.js.');
+ if(!email||!email.includes('@'))return err('Enter a valid email address.');
+ if(authMode==='up'){
+  if(password.length<8)return err('Use a password with at least 8 characters.');
+  if(password!==$('auConf').value)return err('Passwords do not match.');
+  const {data,error}=await cloudClient.auth.signUp({email,password,options:{
+   data:{display_name:email.split('@')[0]},emailRedirectTo:location.origin+location.pathname
+  }});
+  if(error)return err(error.message);
+  if(data.session&&data.user){await startCloudSession(data.user);$('authForm').reset();}
+  else err('Account created. Check your email to confirm your address, then return here and sign in.');
+ }else{
+  const {data,error}=await cloudClient.auth.signInWithPassword({email,password});
+  if(error)return err(error.message);
+  await startCloudSession(data.user);$('authForm').reset();
+ }
+});
+Object.assign(ACT,{
+ signOut:async()=>{
+  if(cloudClient)await cloudClient.auth.signOut();
+  if(cloudChannel){await cloudClient.removeChannel(cloudChannel);cloudChannel=null;}
+  cloudUser=null;me='';closeModals();document.body.classList.add('locked');
+  $('auth').classList.remove('hidden');cloudStatus('Signed out');$('auPass').value='';
+  setTimeout(()=>$('auUser').focus(),50);
+ },
+ img:()=>$('imgFile').click(),
+ imgReset:()=>{delete imgs[curOp];saveImgs();renderOp()},
+ logGuide:()=>{openTx();$('txDesc').value=missionStrands[curGuide][0]+' — Finale Payout';$('txType').value='earn'}
+});
+if(!cloudClient){
+ cloudStatus('Cloud not configured');
+ $('auErr').textContent='Set up Supabase using the included README and supabase-config.js before creating an account.';
+}
 $('imgFile').addEventListener('change',e=>{let f=e.target.files[0];if(!f||!curOp)return;let r=new FileReader();r.onload=()=>{let im=new Image();im.onload=()=>{let k=Math.min(1,900/im.width),c=document.createElement('canvas');c.width=Math.round(im.width*k);c.height=Math.round(im.height*k);c.getContext('2d').drawImage(im,0,0,c.width,c.height);imgs[curOp]=c.toDataURL('image/jpeg',.72);saveImgs();renderOp()};im.onerror=()=>toast('Could not read that image.');im.src=r.result};r.readAsDataURL(f);e.target.value=''});
 const GUIDES=[
 [/Cluckin/i,{start:'Wait for Vincent Effenburger’s call in Free Roam, or check Interaction Menu → Contact Missions. No property and no upfront cost.',steps:['Slush Fund — introductory mission that unlocks the rest.','Breaking and Entering — first setup.','Concealed Weapons — second setup.','Hit and Run — third setup.','Disorganized Crime — fourth setup.','Scene of the Crime — the finale. Raid the Paleto Bay factory using a stealth or aggressive approach.'],v:'$400K–$600K',pay:'Host: about $400,000 per finale, with a larger first-completion bonus each weekly reset (reported up to $600,000). Associates earn a much smaller flat amount, around $50,000. Sources disagree on exact figures because they changed across updates.',tips:['The host receives the main payout, so let the leader start the finale.','Setup equipment you pick up carries into Scene of the Crime.']}],
@@ -371,5 +465,11 @@ function rCars(){let q=($('carSearch').value||'').toLowerCase(),so=$('carSort').
  $('carGrid').innerHTML=list.map((c,i)=>`<article class="ccard" style="animation-delay:${Math.min(i,10)*25}ms"><div class="chead"><small>${esc(c.mk)}${carDealer?'':' · '+esc(dn(c.d))}</small><h3>${esc(c.n)}</h3><span class="pill">${esc(c.cl)}</span></div><div class="cbody"><div class="cprice"><span>Price</span><b class="num">${fmt(c.p)}</b></div><div class="spd" style="display:grid;gap:14px"><div class="sp"><div class="sl"><span>Top speed, fully upgraded</span><b class="num">${mph(c.t)}</b></div><div class="bar"><i style="width:${Math.min(100,c.t/180*100)}%"></i></div></div>${c.h?`<div class="sp hs"><div class="sl"><span>With HSW max upgrade</span><span><b class="num">${mph(c.h)}</b><em>+${(c.h-c.t).toFixed(2).replace(/\.?0+$/,'')} mph</em></span></div><div class="bar"><i style="width:${Math.min(100,c.h/180*100)}%"></i></div></div>`:`<div class="sp na"><div class="sl"><span>HSW max upgrade</span><b>Not available</b></div></div>`}</div></div></article>`).join('')||'<div class="empty">No vehicles match.</div>'}
 document.addEventListener('click',e=>{let b=e.target.closest('[data-dealer]');if(b){carDealer=carDealer===b.dataset.dealer?'':b.dataset.dealer;rCars()}});
 $('carSearch').addEventListener('input',rCars);$('carSort').addEventListener('change',rCars);
-(function(){let u=null;try{u=localStorage.getItem(SESS_KEY)}catch(e){}let r=u&&getUsers()[u];if(r)startSession(u,r.name)})();
+(async function(){
+ if(!cloudClient){document.body.classList.add('locked');$('auth').classList.remove('hidden');return;}
+ const {data,error}=await cloudClient.auth.getSession();
+ if(error){$('auErr').textContent=error.message;return;}
+ if(data.session&&data.session.user)await startCloudSession(data.session.user);
+ else{document.body.classList.add('locked');$('auth').classList.remove('hidden');cloudStatus('Signed out');}
+})();
 </script></body></html>
