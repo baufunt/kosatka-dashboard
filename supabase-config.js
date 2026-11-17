@@ -3,4 +3,4 @@
 // NEVER put a service_role key, secret key, or database password here.
 // Kosatka Finance 2.0 - Supabase configuration
 window.KOSATKA_SUPABASE_URL = "https://rajpswifqeahjydyhlwi.supabase.co";
-window.KOSATKA_SUPABASE_PUBLISHABLE_KEY = "PASTE_YOUR_EXISTING_SB_PUBLISHABLE_KEY_HERE";
+window.KOSATKA_SUPABASE_PUBLISHABLE_KEY = "sb_publishable_iVj8KrialL9MqsqclRYAug_ymv9MhI2";
